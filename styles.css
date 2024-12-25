@@ -35,7 +35,7 @@ ul {
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
     font-weight: 800;
-    color: #f9be52  ;
+    color: #f9be52;
 }
 
 .content {
@@ -60,9 +60,18 @@ ul {
     font-weight: 600;
     padding: 15px 50px;
     border-radius: 20px;
+    border: 3px solid #f9be52;
     background-color: #f9be52;
     color: #292738;
     margin-top: 10px;
+    transition: 0.3s ease;
+}
+.content .left button:hover {
+    border-radius: 20px;
+    background: none;
+    border: 3px solid;
+    border-color: #f9be52;
+    color: #f4fcf8;
 }
 
 .content .right img {
@@ -89,7 +98,7 @@ ul {
 .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -99,8 +108,14 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    width: 250px;
+    text-align: center;
     font-size: 18px;
+}
+
+.cards .card .name {
+    font-weight: 600;
+    margin: 5px;
 }
 
 .cards .card img {
@@ -109,5 +124,76 @@ ul {
     object-fit: cover; 
     border: 5px solid #f9be52;
     border-radius: 15px;
+    margin-bottom: 20px;
 }
 
+
+.third-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: #f9be52;
+    color: #292738;
+}
+
+.third-section .quote {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 30px;
+}
+
+.third-section .quote .author-name {
+    align-self: flex-end;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+.fourth-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    width:  1000px;
+    padding: 50px;
+    border-radius: 10px;
+    color: #f4fcf8;
+    background-color: #292738;
+}
+
+.btn-container .left h2 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.btn-container .left p{
+    font-size: 15px;
+}
+
+.btn-container .right button {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px 50px;
+    border-radius: 20px;
+    background: none;
+    border: 3px solid;
+    border-color: #f9be52;
+    color: #f4fcf8;
+    transition: 0.3s ease;
+}
+
+.btn-container .right button:hover {
+    border-radius: 20px;
+    background-color: #f9be52;
+    color: #292738;
+}
