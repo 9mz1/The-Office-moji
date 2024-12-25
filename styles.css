@@ -5,10 +5,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: #f4fcf8;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .first-section {
@@ -216,8 +226,7 @@ ul {
     font-weight: 400;
 }
 
-a {
+.footer a {
     color: #292738;
-    text-decoration: none;
     font-weight: 600;
 }
